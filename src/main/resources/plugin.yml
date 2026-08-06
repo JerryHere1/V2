@@ -1,0 +1,29 @@
+name: EgoV1.0
+version: 1.0.0
+main: com.ego.plugin.EgoPlugin
+api-version: '1.21'
+description: Advanced autonomous NPC worker bot — EgoV1.0
+authors: [Ego]
+depend: [Citizens]
+
+commands:
+  spawnbot:
+    description: Spawn your Ego bot NPC
+    usage: /spawnbot
+    permission: ego.spawn
+  removebot:
+    description: Remove your Ego bot (returns items)
+    usage: /removebot
+    permission: ego.spawn
+  egoreload:
+    description: Reload EgoV1.0 configuration
+    usage: /egoreload
+    permission: ego.admin
+
+permissions:
+  ego.spawn:
+    description: Allows spawning an Ego bot
+    default: op
+  ego.admin:
+    description: Admin commands (reload, etc.)
+    default: op
